@@ -1,5 +1,6 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
+
 .skill-item {
   background-color: $color-primary;
   min-height: calc(33.333vh - 13.33333px);
@@ -17,24 +18,21 @@
   }
 
   &__overlay {
-    position: absolute;
+    @include abs-position;
     background-color: $color-primary;
-    inset: 0;
     opacity: 0.8;
     transition: opacity 0.5s;
   }
   &__image {
-    position: absolute;
-    inset: 0;
+    @include abs-position;
     background-position: 50% 50%;
     background-size: cover;
     transition: transform 0.5s;
   }
   &__title {
-    position: absolute;
+    @include abs-position;
     z-index: 1;
     margin: 0;
-    inset: 0;
     font-size: 1.25rem;
     letter-spacing: 0.1em;
   }

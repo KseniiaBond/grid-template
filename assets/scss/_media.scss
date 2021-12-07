@@ -1,20 +1,2 @@
-@media (max-width: 992px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .btn--light {
-    width: 200px;
-    height: 50px;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.875rem;
-  }
-  .btn--light {
-    width: 170px;
-    height: $gap-sm;
-  }
-}
+@use "../presets" as *;
+@use "../mixins" as *;
