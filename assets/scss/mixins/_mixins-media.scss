@@ -17,6 +17,11 @@
     @content;
   }
 }
+@mixin md-min {
+  @media (min-width: $md) {
+    @content;
+  }
+}
 @mixin md-sm {
   @media (max-width: $md - 0.2) and (min-width: $sm) {
     @content;
@@ -147,11 +152,6 @@
 // }
 
 // /* md */
-// @mixin md-min {
-//   @media (min-width: $md) {
-//     @content;
-//   }
-// }
 
 // @mixin md {
 //   @media (max-width: $md - 0.2) {
