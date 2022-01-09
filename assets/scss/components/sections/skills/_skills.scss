@@ -45,10 +45,10 @@ $local-gap: 13.3333333333px;
   &__actions {
     display: flex;
     justify-content: center;
-    margin-top: $gap;
+    margin-top: $gap-sm;
     @include sm-min {
       padding: $gap-sm;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 }
