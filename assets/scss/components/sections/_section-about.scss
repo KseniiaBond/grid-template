@@ -11,7 +11,6 @@
     padding: 60px 20px 10px 10px;
     display: grid;
     grid-template-columns: 1fr 271px;
-
     grid-gap: 100px;
   }
   &__text {
@@ -36,7 +35,7 @@
           height: 200px;
           content: "";
           background-color: #707070;
-          right: -$gap * 3.5;
+          right: -68px;
         }
       }
     }

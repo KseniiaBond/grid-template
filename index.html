@@ -1,3 +1,4 @@
+80
 <!doctype html>
 <html lang="zxx">
 
@@ -163,14 +164,17 @@
     </section>
 
     <section class="form">
-      <div class="form__container">
-        <form>
-          <fieldset>
-            <input id="name" type="text" placeholder="Your name...">
-            <input id="email" type="email" placeholder="Your email...">
-            <input class="subscribe" type="submit" value="Subscribe">
-          </fieldset>
-        </form>
+      <form class="form__container" action="#">
+        <div class="form-item">
+          <input class="form-item__input" type="text" placeholder="Your name...">
+        </div>
+        <div class="form-item">
+          <input class="form-item__input" type="text" placeholder="Your email...">
+        </div>
+        <div class="form-item">
+          <button class="btn btn--primary" type="submit">Subscribe</button>
+        </div>
+      </form>
     </section>
 
     <section class="posts">
