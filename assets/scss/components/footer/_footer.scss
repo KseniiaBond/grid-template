@@ -1,2 +1,19 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+.footer {
+  background-color: red;
+  text-align: center;
+  padding: ($gap * 2.5) $gap ($gap * 3.5);
+  &__container {
+    @extend %container;
+    background-color: rgb(233, 218, 4);
+  }
+  &__icons {
+    background-color: rgb(0, 47, 255);
+  }
+}
+.fab {
+}
+.footer__text {
+  background-color: green;
+}
