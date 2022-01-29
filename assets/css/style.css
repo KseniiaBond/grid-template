@@ -913,21 +913,53 @@ p {
 }
 
 .footer {
-  background-color: red;
+  background-color: #2d3651;
   text-align: center;
   padding: 50px 20px 70px;
 }
-.footer__container {
-  background-color: #e9da04;
-}
 .footer__icons {
-  background-color: #002fff;
+  display: grid;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(40px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
 }
-
-.footer__text {
-  background-color: violet;
+.footer__icons::after {
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 37.5px);
+  height: 2px;
+  width: 75px;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
 }
-
+.footer__icons a {
+  display: block;
+  padding: 8px;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.footer__icons a:hover, .footer__icons a:focus {
+  color: #d66926;
+}
+.footer__icons .fab {
+  font-size: 2.25rem;
+}
+.footer__text span:nth-of-type(1) {
+  margin-right: -0.5em;
+  color: #ffffff;
+  font-weight: 100;
+  letter-spacing: 0.33em;
+}
+.footer__text span:nth-of-type(2) {
+  color: #e5e5e5;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
 @media (min-width: 576px) {
   .posts__actions {
     display: -webkit-box;
@@ -948,13 +980,11 @@ p {
     margin-bottom: 20px;
   }
 }
-
 @media (min-height: 691px) {
   .skills__container {
     grid-auto-rows: calc(33.3333vh - 13.3333333333px);
   }
 }
-
 @media (min-width: 768px) {
   .header-navbar__btn {
     display: none;
@@ -981,7 +1011,6 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (min-width: 992px) {
   .posts, .about {
     padding-top: 100px;
@@ -1022,7 +1051,6 @@ p {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 @media (max-width: 991.8px) and (min-width: 768px) {
   .posts, .about {
     padding-top: 80px;
@@ -1059,13 +1087,11 @@ p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 991.8px) and (min-width: 96px) {
   p {
     margin: 0;
   }
 }
-
 @media (max-width: 767.8px) {
   .posts, .about {
     padding-top: 60px;
@@ -1115,7 +1141,6 @@ p {
     font-size: 1.125rem;
   }
 }
-
 @media (max-width: 767.8px) and (min-width: 576px) {
   h2 {
     margin-bottom: 2.25rem;
@@ -1144,13 +1169,11 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-height: 690px) {
   .skills__container {
     grid-auto-rows: calc(230px - 13.3333333333px);
   }
 }
-
 @media (max-width: 575.8px) {
   h2 {
     margin-bottom: 2.25rem;
