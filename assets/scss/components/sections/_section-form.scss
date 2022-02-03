@@ -63,7 +63,9 @@
     }
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
+      outline: none;
       border-color: rgba($color-light, 0.15);
       border-bottom-color: $color-light;
       background-color: rgba($color-light, 0.15);

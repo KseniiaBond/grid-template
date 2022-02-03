@@ -21,7 +21,7 @@
       height: calc($gap / 10);
       width: 75px;
       content: "";
-      background-color: rgba($color-light, 0.1);
+      background-color: $color-light;
     }
 
     a {
@@ -40,17 +40,14 @@
   }
   &__text {
     span {
+      font-weight: 700;
+      letter-spacing: 0.0625em;
       &:nth-of-type(1) {
-        margin-right: -0.5em;
-        color: $color-light;
-        font-weight: 100;
-        letter-spacing: 0.33em;
+        color: $color-gray;
       }
 
       &:nth-of-type(2) {
         color: $color-gray-light;
-        font-weight: 700;
-        letter-spacing: 0.05em;
       }
     }
   }
