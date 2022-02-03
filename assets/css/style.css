@@ -605,7 +605,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .skill-item {
@@ -799,24 +799,25 @@ p {
 .form-item__input::placeholder {
   color: #637588;
 }
-.form-item__input:hover, .form-item__input:focus {
+.form-item__input:hover, .form-item__input:focus, .form-item__input:active {
+  outline: none;
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
 }
-.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
+.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder, .form-item__input:active::-webkit-input-placeholder {
   color: #8c9bab;
 }
-.form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
+.form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder, .form-item__input:active::-moz-placeholder {
   color: #8c9bab;
 }
-.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
+.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder, .form-item__input:active:-ms-input-placeholder {
   color: #8c9bab;
 }
-.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
+.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder, .form-item__input:active::-ms-input-placeholder {
   color: #8c9bab;
 }
-.form-item__input:hover::placeholder, .form-item__input:focus::placeholder {
+.form-item__input:hover::placeholder, .form-item__input:focus::placeholder, .form-item__input:active::placeholder {
   color: #8c9bab;
 }
 
@@ -934,7 +935,7 @@ p {
   height: 2px;
   width: 75px;
   content: "";
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #ffffff;
 }
 .footer__icons a {
   display: block;
@@ -949,16 +950,15 @@ p {
 .footer__icons .fab {
   font-size: 2.25rem;
 }
+.footer__text span {
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+}
 .footer__text span:nth-of-type(1) {
-  margin-right: -0.5em;
-  color: #ffffff;
-  font-weight: 100;
-  letter-spacing: 0.33em;
+  color: #637588;
 }
 .footer__text span:nth-of-type(2) {
   color: #e5e5e5;
-  font-weight: 700;
-  letter-spacing: 0.05em;
 }
 @media (min-width: 576px) {
   .posts__actions {
