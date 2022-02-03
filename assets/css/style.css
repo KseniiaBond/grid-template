@@ -916,7 +916,7 @@ p {
 .footer {
   background-color: #2d3651;
   text-align: center;
-  padding: 50px 20px 70px;
+  padding: 60px 20px 40px;
 }
 .footer__icons {
   display: grid;
@@ -924,7 +924,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   grid-template-columns: repeat(auto-fit, minmax(40px, -webkit-max-content));
   grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
 }
@@ -949,6 +949,9 @@ p {
 }
 .footer__icons .fab {
   font-size: 2.25rem;
+}
+.footer__text {
+  padding: 20px;
 }
 .footer__text span {
   font-weight: 700;
