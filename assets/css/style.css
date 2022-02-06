@@ -916,7 +916,7 @@ p {
 .footer {
   background-color: #2d3651;
   text-align: center;
-  padding: 60px 20px 40px;
+  padding: 50px 20px 70px;
 }
 .footer__icons {
   display: grid;
@@ -924,22 +924,23 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 35px;
-  grid-template-columns: repeat(auto-fit, minmax(40px, -webkit-max-content));
-  grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+  margin-bottom: 62px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
 .footer__icons::after {
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
   left: calc(50% - 37.5px);
   height: 2px;
   width: 75px;
   content: "";
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer__icons a {
   display: block;
-  padding: 8px;
+  padding: 0 8.2px;
+  margin-top: -1.5px;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
@@ -949,18 +950,19 @@ p {
 }
 .footer__icons .fab {
   font-size: 2.25rem;
-}
-.footer__text {
-  padding: 20px;
-}
-.footer__text span {
-  font-weight: 700;
-  letter-spacing: 0.0625em;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .footer__text span:nth-of-type(1) {
-  color: #637588;
+  letter-spacing: 0.3em;
+  font-weight: 100;
+  margin-right: -0.3em;
+  margin-top: 0.2em;
 }
 .footer__text span:nth-of-type(2) {
+  letter-spacing: 0.05em;
+  font-weight: 700;
   color: #e5e5e5;
 }
 @media (min-width: 576px) {

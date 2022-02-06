@@ -3,7 +3,7 @@
 .footer {
   background-color: $color-primary;
   text-align: center;
-  padding: ($gap * 3) $gap ($gap * 2);
+  padding: ($gap * 2.5) $gap ($gap * 3.5);
   &__container {
     @extend %container;
   }
@@ -11,23 +11,25 @@
     display: grid;
     position: relative;
     justify-content: center;
-    margin-bottom: calc($gap * 1.75);
-    grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+    margin-bottom: calc($gap * 3.1);
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 
     &::after {
       position: absolute;
-      bottom: -$gap;
+      bottom: -$gap * 1.5;
       left: calc(50% - 75px / 2);
       height: calc($gap / 10);
       width: 75px;
       content: "";
-      background-color: $color-light;
+      background-color: rgba($color-light, 0.1);
     }
 
     a {
       display: block;
-      padding: 8px;
+      padding: 0 8.2px;
+      margin-top: -1.5px;
       transition: color 0.5s;
+
       &:hover,
       &:focus {
         color: $color-accent;
@@ -36,18 +38,21 @@
 
     .fab {
       font-size: 2.25rem;
+      transition: color 0.5s;
     }
   }
   &__text {
-    padding: $gap;
     span {
-      font-weight: 700;
-      letter-spacing: 0.0625em;
       &:nth-of-type(1) {
-        color: $color-gray;
+        letter-spacing: 0.3em;
+        font-weight: 100;
+        margin-right: -0.3em;
+        margin-top: 0.2em;
       }
 
       &:nth-of-type(2) {
+        letter-spacing: 0.05em;
+        font-weight: 700;
         color: $color-gray-light;
       }
     }
